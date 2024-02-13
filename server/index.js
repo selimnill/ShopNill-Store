@@ -13,7 +13,11 @@ dotenv.config();
 //databse config
 connectDB();
 
-
+const corsOptions ={
+  origin:'https://shopnill-store-zeta.vercel.app', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
+}
 
 //rest object
 const app = express();
@@ -24,6 +28,7 @@ app.use(morgan("dev"));
 app.use(cors({
   origin: ["https://shopnill-store-zeta.vercel.app/","shopnill-store-39soa01g7-mohammad-selims-projects.vercel.app", "shopnill-store-git-main-mohammad-selims-projects.vercel.app", "https://shopnill-store-81k3nbuf1-mohammad-selims-projects.vercel.app" ]
 }));
+app.use(cors(corsOptions));
 
 //routes
 app.use("/api/v1/auth", authRoutes);

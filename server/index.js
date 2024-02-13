@@ -22,7 +22,7 @@ const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors({
-  origin: "https://shop-nill-store.vercel.app/",
+  origin: "https://shopnill-store-zeta.vercel.app/",
 }));
 
 //routes

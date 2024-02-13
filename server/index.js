@@ -22,7 +22,7 @@ const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors({
-  origin: ["https://shopnill-store-zeta.vercel.app/","shopnill-store-39soa01g7-mohammad-selims-projects.vercel.app"]
+  origin: ["https://shopnill-store-zeta.vercel.app/","shopnill-store-39soa01g7-mohammad-selims-projects.vercel.app", "shopnill-store-git-main-mohammad-selims-projects.vercel.app"]
 }));
 
 //routes

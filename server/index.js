@@ -15,6 +15,7 @@ connectDB();
 
 
 const allowedOrigins = [
+  "https://timely-toffee-678f43.netlify.app",
   "https://shopnill-store-zeta.vercel.app/",
   "https://shopnill-store-39soa01g7-mohammad-selims-projects.vercel.app",
   "https://shopnill-store-git-main-mohammad-selims-projects.vercel.app",

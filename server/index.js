@@ -30,7 +30,8 @@ app.use(morgan("dev"));
 
 // Configure CORS middleware with allowed origins
 app.use(cors({
-  origin: allowedOrigins
+  origin: allowedOrigins,
+  methods: ["GET", "PUT", 'POST', "DELETE"]
 }));
 
 //routes
